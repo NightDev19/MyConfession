@@ -1,0 +1,115 @@
+:root {
+  --text-color: black;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: url("../Assets/lovely-9.jpg") no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+h1,h2,h3,h4,h5,h6,p {
+  color: var(--text-color);
+}
+.container {
+  margin: 50% 50%;
+  text-align: center;
+}
+.card {
+  width: 400px;
+  height: 400px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10.5px);
+  -webkit-backdrop-filter: blur(10.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  width: 250px;
+  height: 250px;
+  margin: 10px 0 10px 0;
+}
+.card button {
+  border: 8px double pink;
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 18px;
+  transition: all 400ms ease-in;
+}
+.card button:hover {
+  border: white;
+  background-color: pink;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  overflow: auto;
+}
+.modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.modal form span {
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal form input {
+  height: 30px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.modal form button {
+  border: 8px double pink;
+  border-radius: 18px;
+  width: 120px;
+  height: 50px;
+  font-size: 18px;
+  transition: all 400ms ease-in;
+}
+.modal form button:hover {
+  border: white;
+  background-color: pink;
+}
+
+.modal-content {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  border-radius: 5px;
+  width: 50%;
+  height: 175px;
+  position: relative;
+  border: 10px double pink;
+  border-radius: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}

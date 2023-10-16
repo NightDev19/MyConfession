@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <title>My Confession</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Hello Crush!</h2>
+      <div class="card">
+        <h2>This is for you!</h2>
+        <img
+          src="https://media.tenor.com/u8FqYvg4dxIAAAAi/transparent-milk-and-mocha.gif"
+          alt=""
+        />
+        <button id="openModal" type="button">Click here</button>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Enter Your name please <3</h2>
+        <form id="nameForm">
+          <label for="name">
+            <span>Name :</span>
+            <input type="text" id="name" name="name" required
+          /></label>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./Js/main.js"></script>
+  </body>
+</html>
