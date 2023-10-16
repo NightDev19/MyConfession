@@ -3,10 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="../CSS/surpirse.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1 id="output"></h1>
+    <div class="container">
+      <div class="card">
+        <h1 id="output"></h1>
+
+        <div id="buttons">
+          <button class="button" id="yes" type="button"><b>YES 🥰</b></button>
+          <button class="button" id="no" type="button">No 😔</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModal" class="modal">
+      <div class="modal-content modal-content2">
+        <span id="closeModal" class="close">&times;</span>
+        <h2>Take a Screenshot</h2>
+        <p>You clicked 'Yes.' Please take a screenshot and send it to me.</p>
+      </div>
+    </div>
 
     <script src="../Js/output.js"></script>
   </body>
